@@ -48,7 +48,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .loader__container h2 {
@@ -175,15 +174,15 @@ body {
     box-sizing: border-box;
     transform-origin: 250px;
     box-shadow: 0 0 20px #00efff,
-        -200px -200px 0 #00efff,
-        -200px -200px 20px #00efff,
-        200px 200px 0 #00efff,
-        200px 200px 20px #00efff,
-        200px -200px 0 #00efff,
-        200px -200px 20px #00efff,
-        -200px 200px 0 #00efff,
-        -200px 200px 20px #00efff;
-    animation: animate 5s linear infinite;
+        -200px -200px 0 0.3em #00efff,
+        -200px -200px 20px 0.3em #00efff,
+        200px 200px 0 0.3em #00efff,
+        200px 200px 20px 0.3em #00efff,
+        200px -200px 0 0.3em #00efff,
+        200px -200px 20px 0.3em #00efff,
+        -200px 200px 0  0.3em#00efff,
+        -200px 200px 20px 0.3em #00efff;
+    animation: animate 25s linear infinite;
     animation-delay: calc(-0.25s * var(--i));
     transition: 2s;
 }
@@ -312,11 +311,11 @@ body {
 .presentation__img span {
     z-index: 10;
     position: absolute;
-    top: 0.1em;
-    left: 0.1em;
-    right: 0.1em;
-    bottom: 0.1em;
-    background-color: #00000032;
+    top: 0.3em;
+    left: 0.3em;
+    right: 0.3em;
+    bottom: 0.3em;
+    background-color: #00000089;
     border-radius: 0.8em;
 }
 
@@ -398,7 +397,6 @@ body {
     width: 20em;
     height: 15em;
     color: white;
-    background: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -433,7 +431,7 @@ body {
     left: 0.1em;
     right: 0.1em;
     bottom: 0.1em;
-    background-color: #0000003e;
+    background-color: #000000bf;
     border-radius: 0.8em;
 }
 
