@@ -444,14 +444,13 @@ span {
 .Project {
     z-index: 10;
     width: 100%;
-    max-height: 1100px;
-    height: 100vh;
     display: flex;
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3em;
-    padding-top: 3em;
+    padding-top: 5em;
 }
 
 .Project h2 {
@@ -660,7 +659,7 @@ span {
     }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 800px) {
     .all__container {
         margin: 0;
         width: 100%;
@@ -734,7 +733,7 @@ span {
     }
 
     .presentation__img {
-        width: 50%;
+        width: 40%;
     }
 
     .aboutme__container {
@@ -747,7 +746,7 @@ span {
 
     .Project {
         margin: 0;
-        height: auto;
+        height: 100%;
         max-height: 2000px;
     }
 
