@@ -7,6 +7,20 @@
     font-family: 'Lato', sans-serif;
 }
 
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgb(2, 4, 14);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(31, 194, 249);
+    border-radius: 15px;
+}
+
 img {
     display: block;
     width: 100%;
@@ -61,7 +75,28 @@ body {
     gap: 15em;
     padding: 1em;
     background: linear-gradient(0deg, #0e171d, #090b23);
-    box-shadow: 0em 0em 1em 1px #6f0ad47d;
+    box-shadow: 0em 0em 1em 1px
+
+    /* Works on Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: blue orange;
+    }
+
+    /* Works on Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: orange;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: blue;
+        border-radius: 20px;
+        border: 3px solid orange;
+    }
 }
 
 .titleNav {
