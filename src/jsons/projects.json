@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Netflyx",
+    "description": "Este es un proyecto personal, es una página donde podrás ver todos los tráilers o adelantos de la película o serie que te interese, cuenta con la opción de buscar y filtrar la serie que desees por su nombre o género.",
+    "linkPage": "https://inspiring-donut-e82f81.netlify.app",
+    "projectImg": "/projects/Netflyx.png"
+  },
+  {
+    "id": 2,
+    "title": "Pokedex",
+    "description": "Uno de mis primeros proyectos: una Pokédex interactiva donde podrás explorar todos los Pokémon junto con sus habilidades y estadísticas detalladas.",
+    "linkPage": "https://adorable-bavarois-331a8d.netlify.app/#/pokedex",
+    "projectImg": "/projects/Pokedex.png"
+  },
+  {
+    "id": 3,
+    "title": "E-commerce",
+    "description": "Un proyecto de comercio electrónico sencillo, desarrollado con HTML, CSS y JavaScript, que demuestra una interfaz de usuario intuitiva y funcionalidades básicas de tienda en línea.",
+    "linkPage": "https://papaya-churros-625437.netlify.app/#",
+    "projectImg": "/projects/Ecoomerce.png"
+  }
+]

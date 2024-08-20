@@ -1,0 +1,62 @@
+#root {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pages_container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: var(--body-background);
+}
+.visible {
+  animation: opacityAnimation 1s forwards;
+}
+
+@keyframes fadeInScaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); /* Tamaño inicial más pequeño */
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(
+      1.05
+    ); /* Leve aumento de tamaño para un efecto de rebote */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Tamaño final normal */
+  }
+}
+
+@keyframes opacityAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rowAnimation {
+  0% {
+    transform: translateY(-30%);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30%);
+  }
+}

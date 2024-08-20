@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=DynaPuff:wght@400..700&family=Lilita+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --body-background: #f6f5f4;
+  --body-white: #ffffff;
+  --body-light: rgb(193, 193, 193);
+  --body-brown: rgb(97, 76, 70);
+  --body-blue: rgb(49, 59, 75);
+  --body-black: #090909;
+
+  --text-color-white: #ffffff;
+  --text-color-red: #fc7070;
+
+  --text-color-brown: #5a514b;
+  --text-color-gray: #2b2b2b;
+  --text-color-black: #000000;
+  --text-color-light: rgb(216, 216, 216);
+  --text-color-beigs: rgb(215, 203, 177);
+  --text-color-gold2: #1f1f1f;
+  --text-color-blue: rgb(7, 255, 218);
+
+  --text-title: 40px;
+  --text-subtitle: 28px;
+  --text-section-title: 20px;
+  --text-body: 15px;
+  --text-button: 17px;
+}
+
+.theme__red {
+  --text-color-gold: #ff4242;
+  --text-color-gold2: #b13e3e;
+}
+
+.theme__orange {
+  --text-color-gold: #f26d00;
+  --text-color-gold2: #f26d00;
+}
+
+.theme__plate {
+  --text-color-gold: #9399a1;
+  --text-color-gold2: ;
+}
+
+.theme__blue {
+  --text-color-gold: #00009c;
+}
+
+.theme__gold {
+  --text-color-gold: #b9ad65;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  min-width: 300px;
+  place-content: center;
+  background-color: var(--body-background);
+  letter-spacing: 0.3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+li,
+:link {
+  list-style: none;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+input {
+  outline: none;
+  font-family: inherit;
+}
+
+button {
+  border: none;
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --text-title: 38px;
+    --text-subtitle: 26px;
+    --text-section-title: 18px;
+    --text-body: 14px;
+    --text-button: 16px;
+  }
+}
