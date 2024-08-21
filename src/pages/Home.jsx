@@ -76,7 +76,7 @@ const TransparentVideo = ({ filePath }) => {
         preload="auto"
         autoPlay
         loop
-        style={{ visibility: "hidden" }}
+        style={{ visibility: "hidden", pointerEvents: "none" }}
       >
         <source src={filePath} type="video/mp4" />
       </video>
