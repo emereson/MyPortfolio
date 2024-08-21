@@ -62,10 +62,14 @@ const TransparentVideo = ({ filePath }) => {
   const [isVideoReady, setIsVideoReady] = useState(false);
 
   useEffect(() => {
-    if (videoRef.current) {
-      setIsVideoReady(true);
+    const handleCanPlay = () => setIsVideoReady(true);
+
+    const video = videoRef.current;
+    if (video) {
+      video.addEventListener("canplay", handleCanPlay);
+      return () => video.removeEventListener("canplay", handleCanPlay);
     }
-  }, [videoRef]);
+  }, []);
 
   return (
     <div className="home_video">
@@ -75,7 +79,7 @@ const TransparentVideo = ({ filePath }) => {
         autoPlay
         muted
         loop
-        style={{ visibility: "hidden" }}
+        style={{ visibility: "hidden", pointerEvents: "none" }} // Disable pointer events
       />
       <Canvas gl={{ antialias: false }}>
         {isVideoReady && <VideoComponent video={videoRef.current} />}
