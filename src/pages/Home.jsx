@@ -66,8 +66,15 @@ const TransparentVideo = ({ filePath }) => {
 
     const video = videoRef.current;
     if (video) {
-      video.addEventListener("canplay", handleCanPlay);
-      return () => video.removeEventListener("canplay", handleCanPlay);
+      const handleLoadedMetadata = () => {
+        video.currentTime = 1; // Start the video from the 1-second mark
+        video.play(); // Ensure video starts playing
+        setIsVideoReady(true);
+      };
+
+      video.addEventListener("loadedmetadata", handleLoadedMetadata);
+      return () =>
+        video.removeEventListener("loadedmetadata", handleLoadedMetadata);
     }
   }, []);
 
