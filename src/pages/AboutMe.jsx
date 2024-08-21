@@ -17,9 +17,13 @@ const AboutMe = () => {
     const imageContainer3 = document.querySelector(".AboutMe_image3_container");
 
     if (scrollMultiplier < 0.8) {
+      imageContainer1.style.visibility = `hidden`;
       imageContainer1.style.opacity = "0";
+
       imageContainer1.style.transform = `translateY(50%)`;
     } else {
+      imageContainer1.style.visibility = `visible`;
+
       imageContainer1.style.opacity = "1";
       imageContainer1.style.transform = `translateY(0%)`;
     }
