@@ -126,3 +126,13 @@
     font-size: 30px;
   }
 }
+
+@media (max-width: 550px) {
+  .home_video canvas {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 350px;
+    height: 350px !important;
+  }
+}
