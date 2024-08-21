@@ -79,10 +79,7 @@ const TransparentVideo = ({ filePath }) => {
       >
         <source src={filePath} type="video/mp4" />
       </video>
-      <Canvas
-        gl={{ antialias: false }}
-        style={{ backgroundColor: "transparent" }}
-      >
+      <Canvas gl={{ antialias: false }}>
         {isVideoReady && <VideoComponent video={videoRef.current} />}
       </Canvas>
     </div>
