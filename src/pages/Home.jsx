@@ -73,7 +73,6 @@ const TransparentVideo = ({ filePath }) => {
         ref={videoRef}
         playsInline
         muted
-        preload="auto"
         autoPlay
         loop
         style={{ visibility: "hidden", pointerEvents: "none" }}
