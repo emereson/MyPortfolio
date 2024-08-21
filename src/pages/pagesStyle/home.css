@@ -127,12 +127,12 @@
   }
 }
 
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
   .home_video canvas {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 0;
     width: 350px;
-    height: 350px !important;
+    height: auto !important;
   }
-}
+} */
