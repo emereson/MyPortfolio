@@ -103,6 +103,13 @@
 .AboutMe_sectionOne_button:hover {
   scale: 1;
 }
+
+.AboutMe_sectionOne_button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color-white);
+}
 .AboutMe_sectionOne_button i {
   font-size: 30px;
 }
@@ -152,6 +159,12 @@
 
 .AboutMe_sectionTwo_button:hover {
   scale: 1;
+}
+.AboutMe_sectionTwo_button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color-white);
 }
 .AboutMe_sectionTwo_button i {
   font-size: 30px;
@@ -231,6 +244,11 @@
 .AboutMe_sectionThree_button {
   background-color: rgb(34, 88, 124);
 }
+
+.AboutMe_sectionThree_button a {
+  color: var(--text-color-white);
+}
+
 /* .AboutMe_images_container */
 
 .AboutMe_images_container {

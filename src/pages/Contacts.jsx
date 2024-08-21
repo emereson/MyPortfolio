@@ -1,6 +1,9 @@
 import React, { useRef, useState } from "react";
 import "./pagesStyle/Contacts.css";
+import emailjs from "@emailjs/browser";
 import useIntersectionObserverOnResize from "../hook/useIntersectionObserverOnResize";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contacts = () => {
   const formRef = useRef();
@@ -16,7 +19,6 @@ const Contacts = () => {
   const sendEmail = (e) => {
     e.preventDefault(); // Prevent form submission
     const form = formRef.current;
-    console.log(formRef.current); // Verifica si esto imprime el formulario HTML en la consola
 
     emailjs
       .sendForm(
@@ -28,13 +30,14 @@ const Contacts = () => {
       .then((result) => {
         form.reset();
         toast("💌 El Correo se envio exitosamente 📩", {
-          position: "top-right",
+          position: "bottom-right",
           autoClose: 5001,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
+
           theme: "dark",
         });
       })
@@ -45,6 +48,7 @@ const Contacts = () => {
 
   return (
     <div className="contact_container" id="contacts">
+      <ToastContainer />
       <div className="contact_img" id="contact_img">
         <img src="/projects1.webp" alt="" />
         <article className="contact_img_article">

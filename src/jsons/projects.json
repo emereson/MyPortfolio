@@ -7,6 +7,13 @@
     "projectImg": "/projects/Netflyx.png"
   },
   {
+    "id": 4,
+    "title": "Pac-Man",
+    "description": "Un juego de Pac-Man interactivo desarrollado con JavaScript, CSS y HTML, recreando la experiencia clásica con un diseño moderno y funcionalidades mejoradas.",
+    "linkPage": "https://amazing-lokum-77903e.netlify.app/",
+    "projectImg": "/projects/pacman.png"
+  },
+  {
     "id": 2,
     "title": "Pokedex",
     "description": "Uno de mis primeros proyectos: una Pokédex interactiva donde podrás explorar todos los Pokémon junto con sus habilidades y estadísticas detalladas.",

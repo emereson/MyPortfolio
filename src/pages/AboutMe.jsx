@@ -49,6 +49,9 @@ const AboutMe = () => {
     if (scrollMultiplier > 3.2) {
       imageContainer1.style.transform = `translateY(-50%)`;
       imageContainer1.style.opacity = "0";
+      imageContainer1.style.visibility = `hidden`;
+    } else {
+      imageContainer1.style.visibility = `visible`;
     }
   });
 
@@ -105,7 +108,9 @@ const AboutMe = () => {
               Descargar CV <i class="bx bxs-file-doc"></i>
             </button>
             <button className="AboutMe_sectionOne_button">
-              Mis Habilidades <i class="bx bx-down-arrow-alt"></i>
+              <a href="#AboutMe_section2">
+                Mis Habilidades <i class="bx bx-down-arrow-alt"></i>
+              </a>
             </button>
           </div>
 
@@ -174,7 +179,9 @@ const AboutMe = () => {
           </ul>
 
           <button className="AboutMe_sectionTwo_button">
-            Mis Proyectos <i class="bx bx-chevron-down"></i>
+            <a href="#AboutMe_section3">
+              Mis Estudios <i class="bx bx-chevron-down"></i>
+            </a>
           </button>
           <div className="AboutMe_image2_section AboutMe_image AboutMe_image_section">
             <img src="/aboutMe2.webp" alt="" />
@@ -265,7 +272,9 @@ const AboutMe = () => {
               Descargar CV <i class="bx bxs-file-doc"></i>
             </button>
             <button className="AboutMe_sectionThree_button">
-              Poyectos <i class="bx bxs-briefcase"></i>
+              <a href="#projects">
+                Poyectos <i class="bx bxs-briefcase"></i>
+              </a>
             </button>
           </div>
 

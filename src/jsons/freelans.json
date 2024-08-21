@@ -6,7 +6,14 @@
     "linkPage": "https://computactus.com.pe",
     "projectImg": "/projects/compuctactus.png"
   },
-
+  {
+    "id": 8,
+    "title": "Luminex :)",
+    "description": "Sitio web desarrollado en WordPress, en el cual el cliente solicitó mejorar el diseño y las funcionalidades. El sitio originalmente tenía un diseño básico y no era atractivo para los usuarios, por lo que se implementaron mejoras significativas en la estética y la usabilidad.",
+    "linkPage": "https://luminexdental.com/",
+    "projectImg": "/projects/luminex.png",
+    "projectGif": "/bm.webm"
+  },
   {
     "id": 2,
     "title": "MB HARMONY PLANNER",
