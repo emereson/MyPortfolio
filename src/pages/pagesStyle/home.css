@@ -50,6 +50,7 @@
   min-width: 300px;
   overflow: hidden;
   z-index: 2;
+  background-color: transparent;
   animation: opacityAnimation 1.5s ease-in forwards; /* Aplica la animación */
 }
 
@@ -59,10 +60,13 @@
   overflow: hidden;
   z-index: -1;
   opacity: 0;
+  background-color: transparent;
 }
 
 .home_video canvas {
   position: absolute;
+  background-color: transparent;
+
   top: 0;
   left: 0;
   width: 650px;
