@@ -31,7 +31,7 @@ const Contacts = () => {
         form.reset();
         toast("💌 El Correo se envio exitosamente 📩", {
           position: "bottom-right",
-          autoClose: 5001,
+          autoClose: 3001,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,

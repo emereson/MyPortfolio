@@ -1,6 +1,7 @@
 .contact_container {
   width: 100%;
   background-color: var(--body-background);
+  overflow: hidden;
 }
 
 .contact_img {
@@ -47,6 +48,7 @@
   align-items: center;
   gap: 30px;
   padding: 50px 20px;
+  margin: auto;
 }
 
 .contact__section_two {

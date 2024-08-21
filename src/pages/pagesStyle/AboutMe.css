@@ -1,13 +1,13 @@
 .AboutMe_container {
   position: relative;
-  margin: auto;
   width: 100%;
   max-width: 1800px;
+  height: auto;
   z-index: 3;
   display: grid;
   grid-template-columns: repeat(2, 60%);
-  overflow: hidden;
   transition: 1s ease;
+  overflow: hidden;
 }
 .AboutMe_sectionsContainer {
   width: 100%;

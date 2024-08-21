@@ -6,6 +6,9 @@
   height: 100px;
   z-index: 10;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header_container nav {
   position: relative;

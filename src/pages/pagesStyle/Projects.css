@@ -1,4 +1,5 @@
 .Projects_container {
+  width: 100%;
   position: relative;
   z-index: 3;
   overflow: hidden;
