@@ -70,14 +70,15 @@ const TransparentVideo = ({ filePath }) => {
   return (
     <div className="home_video">
       <video
-        src={filePath}
         ref={videoRef}
         autoPlay={true}
         muted={true}
         loop={true}
         playsinline={true}
         style={{ visibility: "hidden" }}
-      />
+      >
+        <source src={filePath} type="video/mp4" />
+      </video>
       <Canvas gl={{ antialias: false }}>
         {isVideoReady && <VideoComponent video={videoRef.current} />}
       </Canvas>
