@@ -71,6 +71,7 @@ const TransparentVideo = ({ filePath }) => {
     <div className="home_video">
       <video
         ref={videoRef}
+        preload="auto"
         autoPlay={true}
         muted={true}
         loop={true}
