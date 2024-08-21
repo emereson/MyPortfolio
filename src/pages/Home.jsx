@@ -71,11 +71,11 @@ const TransparentVideo = ({ filePath }) => {
     <div className="home_video">
       <video
         ref={videoRef}
-        playsinline={true}
-        muted={true}
+        playsinline
+        muted
         preload="auto"
-        autoPlay={true}
-        loop={true}
+        autoPlay
+        loop
         style={{ visibility: "hidden" }}
       >
         <source src={filePath} type="video/mp4" />
