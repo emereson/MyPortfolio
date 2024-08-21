@@ -67,7 +67,7 @@ const TransparentVideo = ({ filePath }) => {
     const video = videoRef.current;
     if (video) {
       const handleLoadedMetadata = () => {
-        video.currentTime = 1; // Start the video from the 1-second mark
+        video.currentTime = 4; // Start the video from the 1-second mark
         video.play(); // Ensure video starts playing
         setIsVideoReady(true);
       };
