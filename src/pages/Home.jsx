@@ -72,10 +72,10 @@ const TransparentVideo = ({ filePath }) => {
       <video
         src={filePath}
         ref={videoRef}
-        autoPlay
-        muted
-        loop
-        playsinline
+        autoPlay={true}
+        muted={true}
+        loop={true}
+        playsinline={true}
         style={{ visibility: "hidden" }}
       />
       <Canvas gl={{ antialias: false }}>
