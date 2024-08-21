@@ -58,6 +58,7 @@
   width: 100%;
   overflow: hidden;
   z-index: -1;
+  opacity: 0;
 }
 
 .home_video canvas {
