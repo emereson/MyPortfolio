@@ -34,7 +34,7 @@ const fragmentShader = `
 
 // Video Component
 const VideoComponent = ({ video }) => {
-  if (video === null) return null;
+  if (!video) return null;
 
   const videoTexture = new VideoTexture(video);
 
@@ -62,22 +62,31 @@ const TransparentVideo = ({ filePath }) => {
   const [isVideoReady, setIsVideoReady] = useState(false);
 
   useEffect(() => {
-    if (videoRef.current) {
-      setIsVideoReady(true);
+    const videoElement = videoRef.current;
+
+    if (videoElement) {
+      const handleCanPlay = () => {
+        setIsVideoReady(true);
+      };
+
+      videoElement.addEventListener("canplay", handleCanPlay);
+      return () => {
+        videoElement.removeEventListener("canplay", handleCanPlay);
+      };
     }
-  }, [videoRef]);
+  }, []);
 
   return (
     <div className="home_video">
       <video
         src={filePath}
         ref={videoRef}
-        autoPlay={true}
-        muted={true}
-        loop={true}
+        autoPlay
+        muted
+        loop
         style={{ visibility: "hidden" }}
       />
-      <Canvas gl={{ antialias: false }}>
+      <Canvas>
         {isVideoReady && <VideoComponent video={videoRef.current} />}
       </Canvas>
     </div>
