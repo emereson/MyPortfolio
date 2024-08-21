@@ -62,19 +62,10 @@ const TransparentVideo = ({ filePath }) => {
   const [isVideoReady, setIsVideoReady] = useState(false);
 
   useEffect(() => {
-    const video = videoRef.current;
-    if (video) {
-      const handleLoadedMetadata = () => {
-        video.currentTime = 1; // Start the video from the 1-second mark
-        video.play(); // Ensure video starts playing
-        setIsVideoReady(true);
-      };
-
-      video.addEventListener("loadedmetadata", handleLoadedMetadata);
-      return () =>
-        video.removeEventListener("loadedmetadata", handleLoadedMetadata);
+    if (videoRef.current) {
+      setIsVideoReady(true);
     }
-  }, []);
+  }, [videoRef]);
 
   return (
     <div className="home_video">
@@ -84,14 +75,12 @@ const TransparentVideo = ({ filePath }) => {
         autoPlay
         muted
         loop
-        controls
-        style={{ visibility: "visible", width: "100%", height: "auto" }} // Visible for debugging
+        playsinline
+        style={{ visibility: "hidden" }}
       />
-      {isVideoReady && (
-        <Canvas gl={{ antialias: false }}>
-          <VideoComponent video={videoRef.current} />
-        </Canvas>
-      )}
+      <Canvas gl={{ antialias: false }}>
+        {isVideoReady && <VideoComponent video={videoRef.current} />}
+      </Canvas>
     </div>
   );
 };
